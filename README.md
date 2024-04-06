@@ -27,8 +27,6 @@ Para uso do projeto, deve-se clonar o repositório localmente
 
 Após isso, se direcione para a pasta na qual você poderá encontrar o arquivo "manage.py" que é responsável por executar os scripts do Django.
 
-![Exemplo](image.png)
-
 Com isso feito, utilize o terminal para usar o comando de inicialização do localhost
 
     python manage.py runserver
