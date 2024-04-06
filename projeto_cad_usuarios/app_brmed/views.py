@@ -4,6 +4,9 @@ from .models import Usuario
 def home(request):
     return render(request, 'usuarios/home.html')
 
+def cadastro(request):
+    return render(request, 'usuarios/cadastro.html')
+
 def usuarios(request):
     # Salvar os dados da tela para o banco de dados
     novo_usuario = Usuario()
@@ -22,3 +25,6 @@ def usuarios(request):
     
     # Retornar os dados para a página de listagem
     return render(request,'usuarios/usuarios.html',usuarios)
+
+def agendamento(request):
+    return render(request, 'usuarios/agendamento.html')
