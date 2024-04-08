@@ -1,14 +1,20 @@
-from django.urls import path
+from django.urls import path, include
 from app_brmed import views
+from django.contrib import admin
 
 urlpatterns = [
     # rota, view responsavel, nome de referencia 
     #brmed.com
     path('',views.home,name='home'),
-    #cadastro
+   
     path('cadastro/',views.cadastro,name='cadastro'),
-    #brmed.com/cadastro
+   
     path('usuarios/', views.usuarios,name='listagem_usuarios'),
-    #brmed.com/agendamento
-    path('agendamento/', views.agendamento,name='agendamento')
+    
+    path('auth/', views.auth,name='auth'),
+  
+    path('agendamento/', views.agendamentos,name='agendamento'),
+
+    path('marcados/', views.marcados,name='listagem_agendamentos')
+
 ]   

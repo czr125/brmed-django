@@ -15,9 +15,12 @@
   <body>
     <nav style="background-color: aquamarine !important;";class="navbar navbar-light bg-light">
       <div class="container-fluid">
-         <a href="{% url 'home' %}"><img style="width: 100px; height: 100px;" src="{% static 'img/logo_brmed.png' %}" alt="Logo"></a>
+        <a href="{% url 'home' %}"><img style="width: 100px; height: 100px;" src="{% static 'img/logo_brmed.png' %}" alt="Logo"></a>
+        <span class="navbar-brand mb-0 h1"><a href="{% url 'auth' %}">Login</span></a>
         <span class="navbar-brand mb-0 h1"><a href="{% url 'cadastro' %}">Cadastre-se</span></a>
-        <span class="navbar-brand mb-0 h1"><a href="{% url 'agendamento' %}">Agendamentos</span></a>
+        <span class="navbar-brand mb-0 h1"><a href="{% url 'listagem_agendamentos' %}">Agendamentos</span></a>
+        <span style="position: absolute; right: 0; padding-top: 33px; margin-right: 40px;" class="navbar-brand mb-0 h1"><a href="{% url 'auth' %}">Perfil</span></a>
+
         </div>
     </nav>
     {% block conteudo %}
